@@ -1,0 +1,20 @@
+@import url(./home.css);
+@import url(./reset.css);
+
+:root {
+    --transparente: #0B0D17;
+    --lilas: #D0D6F9;
+    --branco: #FFFFFF;
+    --fonte-principal: 'Barlow Condensed';
+    --fonte-secundaria: 'Bellefair';
+}
+
+body,html {
+    width: 100%;
+    height: 100%;
+    font-family: var(--fonte-principal);
+    background-image: url(../home/background-home-desktop.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
