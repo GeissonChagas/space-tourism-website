@@ -35,6 +35,20 @@
     padding-left: 3em;
     flex-grow: 1;
     text-transform: uppercase;
+    cursor: pointer;
+    
+}
+
+.link-linha{
+text-decoration: none;
+color: var(--branco);
+}
+
+.link-linha:hover{
+    border-bottom: 3px solid var(--branco);
+    padding-bottom: 18%;
+    transition: 750ms;
+    
 }
 
 .linha-horizontal {
@@ -105,7 +119,7 @@
 }
 
 .botao-explore:hover{
-    box-shadow: 32px 32px 32px 48px rgba(255, 255, 255, 0.2);
-    transition: 750ms;
+    box-shadow: 10px 10px 40px 25px rgba(255, 255, 255, 0.4);
+    transition: 1000ms;
 
 }

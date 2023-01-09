@@ -9,6 +9,10 @@
     --fonte-secundaria: 'Bellefair';
 }
 
+b {
+    font-weight: 900;
+}
+
 body,html {
     width: 100%;
     height: 100%;
