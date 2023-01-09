@@ -30,8 +30,8 @@ a:hover:before {
 }
 
 .body-destinos {
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
     background-image: url(../destination/background-destination-desktop.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -50,14 +50,14 @@ a:hover:before {
 
 .section-esquerda {
     flex-grow: 1;
-    padding: 5rem;
+    padding: 10rem 5rem;
     width: 45%;
 
 }
 
 .section-direita {
     flex-grow: 1;
-    padding: 5rem;
+    padding: 15rem 10rem 10rem 10rem;
     width: 55%;
 
 }

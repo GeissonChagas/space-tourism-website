@@ -1,5 +1,7 @@
 .body-home{
     background-image: url(../home/background-home-desktop.jpg);
+    width: 100vw;
+    height: 100vh;
     background-repeat: no-repeat;
     background-size: cover;
     -webkit-background-size: cover;
@@ -7,21 +9,23 @@
     background-size: cover;
     -o-background-size: cover;
     color: var(--branco);
+
 }
 
 .header {
     display: flex;
     justify-content: space-between;
-    width: 100%;
+    width: 100vw;
     height: 96px;
-    margin-top: 2em;
     align-items: center;
     flex-wrap: wrap;
+    position: relative;
+    top: 5%;
 
 }
 
 .logo{
-    padding-left: 2em;
+    margin-left: 2em;
 }
 
 .menu {
@@ -69,7 +73,7 @@ color: var(--branco);
     width: 42%;
     height: 1px;
     left: 10%;
-    top: 8%;
+    top: 50%;
     background: #FFFFFF;
     mix-blend-mode: normal;
     opacity: 0.25;
