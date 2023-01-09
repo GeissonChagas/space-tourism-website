@@ -5,10 +5,10 @@ hr {
 a {
     position: relative;
     color: #fff;
-    text-decoration: none;  
-  }
+    text-decoration: none;
+}
 
-  a:before {
+a:before {
     content: "";
     position: absolute;
     width: 100%;
@@ -21,12 +21,12 @@ a {
     transform: scaleX(0);
     -webkit-transition: all 0.3s ease-in-out 0s;
     transition: all 0.3s ease-in-out 0s;
-  }
+}
 
 a:hover:before {
-  visibility: visible;
-  -webkit-transform: scaleX(1);
-  transform: scaleX(1);
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
 }
 
 .body-destinos {
@@ -95,8 +95,12 @@ a:hover:before {
     text-transform: uppercase;
 }
 
-.destinos-itens {
+.destinos__lista--itens {
     padding: 0 2em;
+}
+
+.ativo {
+    border-bottom: 2px solid var(--branco);
 }
 
 .descricao__titulo {

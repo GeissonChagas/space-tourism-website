@@ -1,4 +1,4 @@
-.body-home{
+.body-home {
     background-image: url(../home/background-home-desktop.jpg);
     width: 100vw;
     height: 100vh;
@@ -24,7 +24,7 @@
 
 }
 
-.logo{
+.logo {
     margin-left: 2em;
 }
 
@@ -35,12 +35,12 @@
     color: var(--branco);
     right: 0;
 
-    
+
 }
 
 .menu-lista {
     display: flex;
-    align-items:center;
+    align-items: center;
     flex-direction: row;
     list-style: none;
     height: 96px;
@@ -49,23 +49,22 @@
 }
 
 .menu-item {
-    padding-left: 3em;
     flex-grow: 1;
+    text-align: center;
     text-transform: uppercase;
     cursor: pointer;
-    
+
 }
 
-.link-linha{
-text-decoration: none;
-color: var(--branco);
+.link-linha {
+    text-decoration: none;
+    color: var(--branco);
 }
 
-.link-linha:hover{
-    border-bottom: 3px solid var(--branco);
-    padding-bottom: 18%;
-    transition: 750ms;
-    
+.link-linha:hover, .link-linha.ativo {
+    padding-bottom: 2.25rem;
+    transition: 500ms;
+
 }
 
 .linha-horizontal {
@@ -96,33 +95,32 @@ color: var(--branco);
     text-transform: uppercase;
 }
 
-.font-18px{
+.font-18px {
     font-size: 18px;
     color: var(--branco);
 }
 
-.main{
+.main {
     display: flex;
     justify-content: space-between;
-    
+
 }
 
-.texto{
+.texto {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     flex-grow: 1;
     padding: 10%
-
 }
 
-.botao{
+.botao {
     display: flex;
     padding: 15%;
 
 }
 
-.botao-explore{
+.botao-explore {
     Width: 274px;
     Height: 274px;
     background-color: var(--branco);
@@ -135,7 +133,7 @@ color: var(--branco);
     text-transform: uppercase;
 }
 
-.botao-explore:hover{
+.botao-explore:hover {
     box-shadow: 10px 10px 40px 25px rgba(255, 255, 255, 0.4);
     transition: 1000ms;
 
