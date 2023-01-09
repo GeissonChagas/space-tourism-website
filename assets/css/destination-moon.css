@@ -1,4 +1,37 @@
-.body-destinos{
+hr {
+    opacity: 0.25;
+}
+
+a {
+    position: relative;
+    color: #fff;
+    text-decoration: none;  
+  }
+
+  a:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    background-color: #fff;
+    visibility: hidden;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+  }
+
+a:hover:before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+.body-destinos {
+    width: 100%;
+    height: 100%;
     background-image: url(../destination/background-destination-desktop.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -9,16 +42,98 @@
     color: var(--branco);
 }
 
-.destinos-main{
+
+.destinos-main {
     display: flex;
     justify-content: space-between;
 }
 
-.section-esquerda{
+.section-esquerda {
     flex-grow: 1;
+    padding: 5rem;
+    width: 45%;
+
 }
 
-.section-direita{
+.section-direita {
     flex-grow: 1;
+    padding: 5rem;
+    width: 55%;
+
+}
+
+.titulo {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.titulo h1 {
+    font-size: 28px;
+    text-transform: uppercase;
+    text-align: center;
+    padding-bottom: 2em;
+}
+
+.titulo h1 b {
+    font-weight: 700;
+    opacity: 0.25;
+}
+
+.section-direita {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.destinos-lista {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 40%;
+    text-transform: uppercase;
+}
+
+.destinos-itens {
+    padding: 0 2em;
+}
+
+.descricao__titulo {
+    font-size: 100px;
+    font-family: var(--fonte-secundaria);
+    text-transform: uppercase;
+    padding: 3rem 0;
+}
+
+.tempo-distancia {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 2rem;
+}
+
+.tempo- {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    text-transform: uppercase;
+
+
+}
+
+.distancia- {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    text-transform: uppercase;
+
+}
+
+.distancia__numero,
+.tempo__numero {
+    font-size: 28px;
+    font-family: var(--fonte-secundaria);
+    padding-top: 0.5rem;
+    text-transform: uppercase;
 
 }
