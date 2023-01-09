@@ -1,0 +1,24 @@
+.body-destinos{
+    background-image: url(../destination/background-destination-desktop.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    color: var(--branco);
+}
+
+.destinos-main{
+    display: flex;
+    justify-content: space-between;
+}
+
+.section-esquerda{
+    flex-grow: 1;
+}
+
+.section-direita{
+    flex-grow: 1;
+
+}

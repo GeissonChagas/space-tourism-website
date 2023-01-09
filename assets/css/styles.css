@@ -1,5 +1,6 @@
 @import url(./home.css);
 @import url(./reset.css);
+@import url(./destination-moon.css);
 
 :root {
     --transparente: #0B0D17;
@@ -14,11 +15,6 @@ b {
 }
 
 body,html {
-    width: 100%;
-    height: 100%;
     font-family: var(--fonte-principal);
-    background-image: url(../home/background-home-desktop.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    
+   
 }

@@ -1,3 +1,14 @@
+.body-home{
+    background-image: url(../home/background-home-desktop.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    color: var(--branco);
+}
+
 .header {
     display: flex;
     justify-content: space-between;
@@ -19,6 +30,9 @@
     backdrop-filter: blur(40.7742px);
     width: 50%;
     color: var(--branco);
+    right: 0;
+
+    
 }
 
 .menu-lista {
