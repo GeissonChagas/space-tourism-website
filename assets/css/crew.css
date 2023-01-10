@@ -1,0 +1,58 @@
+.body-crew {
+    width: 100vw;
+    height: 100vh;
+    background-image: url(../crew/background-crew-desktop.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    color: var(--branco);
+}
+
+.titulos__cargo{
+    font-family: var(--fonte-secundaria);
+    font-size: 32px;
+    color: var(--branco);
+    text-transform: uppercase;
+    opacity: 0.5;
+
+}
+
+.titulos__nome{
+    font-family: var(--fonte-secundaria);
+    font-size: 56px;
+    color: var(--branco);
+    text-transform: uppercase;
+
+}
+
+.crew-main{
+    display: flex;
+    justify-content: space-between;
+    width: 100vw;
+    height: 90vh;
+
+}
+
+.section-esquerda-crew{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 60vw;
+
+}
+
+.section-direita-crew{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 40vw;
+    text-transform: uppercase;
+}
+
+.img-crew{
+    width: 35vw;
+    height: 70vh;
+}
