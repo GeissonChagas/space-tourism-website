@@ -54,11 +54,11 @@
 }
 
 .linha-horizontal {
-    position: absolute;
+    position: relative;
     width: 42%;
     height: 1px;
-    left: 10%;
-    top: 50%;
+    left: 5rem;
+    top: 0%;
     background: #FFFFFF;
     mix-blend-mode: normal;
     opacity: 0.25;

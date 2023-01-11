@@ -41,8 +41,34 @@
     flex-direction: column;
     justify-content: center;
     width: 60vw;
+    padding: 0 10vw;
 
 }
+
+.titulo-crew{
+    font-size: 28px;
+    text-transform: uppercase;
+    text-align: left;
+    padding-bottom: 2rem;
+}
+
+.titulo-crew b{
+    opacity: 0.5;
+}
+
+.titulos__cargo{
+    padding-top: 10rem;
+}
+
+.titulos__nome  {
+    text-align: left;
+    padding-top: 2vh;;
+}
+
+.texto-crew{
+    padding: 3vh 10vw 0vh 0vw ;
+}
+
 
 .section-direita-crew{
     display: flex;
@@ -53,6 +79,11 @@
 }
 
 .img-crew{
-    width: 35vw;
-    height: 70vh;
+    max-width: 35vw;
+    max-height: 70vh;
+    position: relative;
+    top: 12rem;
+    right: 5rem;
+
+
 }
