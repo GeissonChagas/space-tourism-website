@@ -1,14 +1,26 @@
-const comandanteSlide   = document.getElementById('radio1')
-const especialistaSlide = document.getElementById('radio2')
-const pilotoSlide = document.getElementById('radio3')
-const engenheiraSlide = document.getElementById('radio4')
+const comandanteRadio = document.getElementById('radio1')
+const especialistaRadio = document.getElementById('radio2')
+const pilotoRadio = document.getElementById('radio3')
+const engenheiraRadio = document.getElementById('radio4')
 
-comandanteSlide.addEventListener('click', (evento) =>{
-    evento.preventDefault()
-    window.location.href = "./crew-commander.html"
+// Trocando slides com através do evento de click:
+
+comandanteRadio.addEventListener('click', () => {
+    window.location.href = './crew-commander.html'
 })
 
-especialistaSlide.addEventListener('click', (evento) => {
-    evento.preventDefault()
-    window.location.href = "./crew-specialist.html"
+especialistaRadio.addEventListener('click', () => {
+    window.location.href = './crew-specialist.html'
 })
+
+pilotoRadio.addEventListener('click', () => {
+    window.location.href = './crew-pilot.html'
+})
+
+engenheiraRadio.addEventListener('click', () => {
+    window.location.href = './crew-engineer.html'
+})
+
+
+
+

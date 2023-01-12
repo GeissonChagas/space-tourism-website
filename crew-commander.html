@@ -31,36 +31,41 @@
 
   </header>
 
-  <main class="crew-main">
-    <div class="slider">
-      <section class="section-esquerda-crew">
-        <div class="titulo-crew">
-          <h1><b>02 </b> Meet your crew</h1>
-        </div>
-        <div>
-          <h2 class="titulos__cargo">Commander</h2>
-          <h1 class="titulos__nome">Douglas Hurley</h1>
-        </div>
-        <div class="texto-crew">
-          <p>Douglas Gerald Hurley is an American engineer, former Marine Corps pilot
-            and former NASA astronaut. He launched into space for the third time as
-            commander of Crew Dragon Demo-2.</p>
-        </div>
-        <div class="radio">
-          <input type="radio" name="radio" id="radio1">
-          <input type="radio" name="radio" id="radio2">
-          <input type="radio" name="radio" id="radio3">
-          <input type="radio" name="radio" id="radio4">
-        </div>
-      </section>
 
-      <section class="section-direita-crew">
-        <img class="img-crew" src="./assets/crew/image-douglas-hurley.png" style="max-width: 580px; max-height: 730px; padding-top: 8.7rem;" alt="Foto de Douglas Hurley" >
-      </section>
+  <main class="crew-main">
+
+
+    <section class="section-esquerda-crew">
+      <div class="titulo-crew">
+        <h1><b>02 </b> Meet your crew</h1>
+      </div>
+      <div>
+        <h2 class="titulos__cargo">Commander</h2>
+        <h1 class="titulos__nome">Douglas Hurley</h1>
+      </div>
+      <div class="texto-crew">
+        <p>Douglas Gerald Hurley is an American engineer, former Marine Corps pilot
+          and former NASA astronaut. He launched into space for the third time as
+          commander of Crew Dragon Demo-2.</p>
+      </div>
+      <div class="radio">
+        <input type="radio" name="radio" id="radio1" class="radio-input">
+        <input type="radio" name="radio" id="radio2" class="radio-input">
+        <input type="radio" name="radio" id="radio3" class="radio-input">
+        <input type="radio" name="radio" id="radio4" class="radio-input">
+      </div>
+    </section>
+
+    <section class="section-direita-crew">
+      <img class="img-crew" src="./assets/crew/image-douglas-hurley.png"
+        style="max-width: 620px; max-height: 900px; padding-top: 8.7rem;" alt="Foto de Douglas Hurley">
+    </section>
     </div>
 
-
+    <!-- Script para arquivo JS -->
     <script src="./assets/js/script.js"></script>
+    <!-- Script para troca automática a cada 8 segundos -->
+    <script>setTimeout(() => {window.location.href = './crew-specialist.html'}, 8000)</script>
 </body>
 
 </html>
