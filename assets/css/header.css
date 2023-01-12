@@ -54,7 +54,7 @@
 }
 
 .linha-horizontal {
-    position: relative;
+    position: relative  ;
     width: 42%;
     height: 1px;
     left: 5rem;

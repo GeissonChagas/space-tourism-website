@@ -40,8 +40,9 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 60vw;
-    padding: 0 10vw;
+    align-items: left;
+    padding-left: 10vw;
+    width: 40vw;
 
 }
 
@@ -62,28 +63,36 @@
 
 .titulos__nome  {
     text-align: left;
-    padding-top: 2vh;;
+    padding-top: 2vh;
 }
 
 .texto-crew{
-    padding: 3vh 10vw 0vh 0vw ;
+    position: relative;
+    top: 2.5rem;
 }
 
 
 .section-direita-crew{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    width: 40vw;
+    justify-content: center;
+    width: 50vw;
     text-transform: uppercase;
+
 }
 
 .img-crew{
-    max-width: 35vw;
-    max-height: 70vh;
+    display: flex;
+    vertical-align: baseline;
+
+}
+
+.slider{
+    display: flex;
+}
+
+.radio{
+    display: flex;
     position: relative;
-    top: 12rem;
-    right: 5rem;
-
-
+    top: 5rem;
 }
