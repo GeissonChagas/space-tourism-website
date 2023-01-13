@@ -46,14 +46,14 @@
 
 }
 
-.titulo-crew{
+.titulo-main{
     font-size: 28px;
     text-transform: uppercase;
     text-align: left;
     padding-bottom: 2rem;
 }
 
-.titulo-crew b{
+.titulo-main b{
     opacity: 0.5;
 }
 
