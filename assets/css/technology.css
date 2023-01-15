@@ -83,22 +83,106 @@
 }
 
 .imagem-tecnologia{
+    background-image: url(../technology/image-space-capsule-portrait.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
     grid-area: imagem;
 }
 
 @media screen and (max-width:768px) {
+    .header{
+        height: 10%;
+    }
+
     .container-tecnologia{
         display: grid;
+        width: 100%;
+        height: 90%;
         grid-template-columns: 100%;
-        grid-template-rows: 15% 35% 15% 35%;
+        grid-template-rows: 8% 37% 10% 45%;
         grid-template-areas: 
             'titulo'
             'imagem'
             'botoes'
             'texto';
         position: relative;
-        top:0;
+        top: 5%;
+        text-align: center;
     }
+
+    .titulo-main{
+        grid-area: titulo;
+        text-align: left;
+        padding-left: 3rem;
+    }
+
+    .imagem-tecnologia-capsule{
+        grid-area: imagem;
+        grid-row-start: 2;
+        grid-row-end: 2;
+        width: 100%;
+        height: 100%;
+        background-image: url(../technology/image-space-capsule-landscape.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .imagem-tecnologia-vehicle{
+        grid-area: imagem;
+        grid-row-start: 2;
+        grid-row-end: 2;
+        width: 100%;
+        height: 100%;
+        background-image: url(../technology/image-launch-vehicle-landscape.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .imagem-tecnologia-spaceport{
+        grid-area: imagem;
+        grid-row-start: 2;
+        grid-row-end: 2;
+        width: 100%;
+        height: 100%;
+        background-image: url(../technology/image-spaceport-landscape.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .button-tecnologia{
+        padding-top: 2rem;
+        grid-area: botoes;
+        flex-direction: row;
+        justify-content: center;
+        
+
+    }
+
+    .button-tecnologia input{
+        width: 58px;
+        height: 58px;
+        margin: 1rem;
+    }
+
+    .textos-container{
+        display: flex;
+        grid-area: texto;
+        padding: 0;
+        text-align: center;
+        justify-content: center;
+        justify-items: center;
+        width: 100%;
+    }
+
+    .textos-container p{
+        width: 80%;
+        margin: 0 auto 1rem auto;
+
+    }
+
+
 }
 
 

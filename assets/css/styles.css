@@ -52,3 +52,9 @@ a:hover:before {
     -webkit-transform: scaleX(1);
     transform: scaleX(1);
 }
+
+.button .ativo2{
+    background-color: #ffffff;
+    color: #000000;
+
+}
