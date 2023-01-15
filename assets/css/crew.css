@@ -81,12 +81,17 @@
 
 }
 
+.section-direita-crew img{
+    max-width: 620px;
+    max-height: 780px;
+    position: absolute;
+    bottom: 0;
+}
+
 .img-crew{
     display: flex;
     vertical-align: baseline;
 }
-
-
 
 .slider{
     display: flex;
@@ -96,4 +101,62 @@
     display: flex;
     position: relative;
     top: 5rem;
+}
+
+@media screen and (max-width:768px) {
+    .body-crew{
+        background-image: url(../crew/background-crew-tablet.jpg);
+    }
+
+    .crew-main{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        justify-content: space-between;
+        width: 100vw;
+        height: 100vh;  
+        }
+
+    .titulo-main{
+        font-size: 24px;
+        text-transform: uppercase;
+        text-align: center;
+        padding-top: 1rem;
+    }
+
+    .titulos__cargo{
+        text-align: center;
+        padding: 0;
+        font-size: 28px;
+    } 
+    
+    .titulos__nome{
+        text-align: center;
+        font-size: 46px;
+        padding: 0;
+    }
+
+    .section-esquerda-crew{
+        padding: 0;
+        width: 80%;
+        text-align: center;
+    }
+
+    .section-direita-crew{
+        flex-direction: column;
+
+    }
+
+    .section-direita-crew img {
+        width: 25rem;
+        height: 30rem;
+
+    }
+
+    .radio{
+        align-items: center;
+        justify-content: center;
+    }
+
 }

@@ -36,7 +36,6 @@
 .main {
     display: flex;
     justify-content: space-between;
-
 }
 
 .texto {
@@ -54,8 +53,8 @@
 }
 
 .botao-explore {
-    Width: 274px;
-    Height: 274px;
+    Width: 17rem;
+    Height: 17rem;
     background-color: var(--branco);
     border-radius: 50%;
     border-style: none;
@@ -70,4 +69,47 @@
     box-shadow: 10px 10px 40px 25px rgba(255, 255, 255, 0.4);
     transition: 1000ms;
 
+}
+
+@media screen and (max-width: 768px) {
+    .body-home {
+        background-image: url(../home/background-home-tablet.jpg);
+        width: 100vw;
+        height: 100vh;
+        background-repeat: no-repeat;
+        background-size: cover;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        background-size: cover;
+        -o-background-size: cover;
+        color: var(--branco);
+    
+    }
+
+    .botao-explore {
+        Width: 15rem;
+        Height: 15rem;
+        
+    }
+
+    .font-150px{
+        padding: 1rem 2rem;
+    }
+    .texto{
+        padding: 4rem;
+    }
+
+    .main{
+        flex-direction: column;
+        text-align: center;
+        position: relative;
+        top: 10%;
+    }
+    
+    .botao{
+        justify-content: center;
+        padding: 1rem 0;
+    }
+    
+    
 }

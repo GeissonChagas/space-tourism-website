@@ -22,11 +22,7 @@ engenheiraRadio.addEventListener('click', () => {
     window.location.href = './crew-engineer.html'
 })
 
-// Adicionando endereço aos botões da aba de tecnologia
 
-botao1.addEventListener('click', () => {window.location.href="./technology-vehicle.html"})
-botao2.addEventListener('click', () => {window.location.href="./technology-spaceport.html"})
-botao3.addEventListener('click', () => {window.location.href="./technology-capsule.html"})
 
 
 

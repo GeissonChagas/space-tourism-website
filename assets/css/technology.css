@@ -86,4 +86,19 @@
     grid-area: imagem;
 }
 
+@media screen and (max-width:768px) {
+    .container-tecnologia{
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 15% 35% 15% 35%;
+        grid-template-areas: 
+            'titulo'
+            'imagem'
+            'botoes'
+            'texto';
+        position: relative;
+        top:0;
+    }
+}
+
 

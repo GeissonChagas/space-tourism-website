@@ -23,52 +23,50 @@
     <nav class="menu">
       <ul class="menu-lista">
         <li class="menu-item"><a href="index.html" class="link-linha"><b>00</b> Home</a></li>
-        <li class="menu-item"><a href="destination-moon.html" class="link-linha"><b>01</b> Destination</a></li>
-        <li class="menu-item"><a href="crew-commander.html" class="link-linha ativo"><b>02</b> Crew</a></li>
+        <li class="menu-item"><a href="destination-moon.html" class="link-linha ativo"><b>01</b> Destination</a></li>
+        <li class="menu-item"><a href="crew-commander.html" class="link-linha"><b>02</b> Crew</a></li>
         <li class="menu-item"><a href="technology-vehicle.html" class="link-linha"><b>03</b> Technology</a></li>
       </ul>
     </nav>
 
   </header>
 
+
   <main class="crew-main">
-    <div class="slider">
-      <section class="section-esquerda-crew">
-        <div class="titulo-main">
-          <h1><b>02 </b> Meet your crew</h1>
-        </div>
-        <div>
-          <h2 class="titulos__cargo">Mission Specialist</h2>
-          <h1 class="titulos__nome">Mark Shuttleworth</h1>
-        </div>
-        <div class="texto-crew">
-          <p>Mark Richard Shuttleworth is the founder and CEO of Canonical, the company behind
-            the Linux-based Ubuntu operating system. Shuttleworth became the first South
-            African to travel to space as a space tourist.</p>
-        </div>
-        <div class="radio">
-          <input type="radio" name="radio" id="radio1">
-          <input type="radio" name="radio" id="radio2">
-          <input type="radio" name="radio" id="radio3">
-          <input type="radio" name="radio" id="radio4">
-        </div>
-      </section>
 
-      <section class="section-direita-crew">
-        <img src="./assets/crew/image-mark-shuttleworth.png" alt="Foto de Mark Shuttleworth" class="img-crew"
-          style="max-width: 640px; max-height: 820px; padding-top: 8.7rem;">
-      </section>
-    </div>
 
+    <section class="section-esquerda-crew">
+      <div class="titulo-main">
+        <h1><b>02 </b> Meet your crew</h1>
+      </div>
+      <div>
+        <h2 class="titulos__cargo">Mission Specialist </h2>
+        <h1 class="titulos__nome">MARK SHUTTLEWORTH</h1>
+      </div>
+      <div class="texto-crew">
+        <p>Mark Richard Shuttleworth is the founder and CEO of Canonical, the company behind the Linux-based Ubuntu
+           operating system. Shuttleworth became the first South African to travel to space as a space tourist..</p>
+      </div>
+      <div class="radio">
+        <input type="radio" name="radio" id="radio1" class="radio-input">
+        <input type="radio" name="radio" id="radio2" class="radio-input">
+        <input type="radio" name="radio" id="radio3" class="radio-input">
+        <input type="radio" name="radio" id="radio4" class="radio-input">
+      </div>
     </section>
 
+    <section class="section-direita-crew">
+      <img class="img-crew" src="./assets/crew/image-mark-shuttleworth.png" alt="Foto de Douglas Hurley">
+    </section>
+    </div>
+
+    <!-- Script para arquivo JS -->
     <script src="./assets/js/script.js"></script>
     <!-- Script para troca automática a cada 8 segundos -->
-    <script>setTimeout(() => { window.location.href = './crew-pilot.html' }, 8000)</script>
+    <script>setTimeout(() => {window.location.href = './crew-pilot.html'}, 8000)</script>
 </body>
 
 </html>
-
 
 
 

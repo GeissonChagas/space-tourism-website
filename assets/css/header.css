@@ -63,5 +63,17 @@
     mix-blend-mode: normal;
     opacity: 0.25;
 
+}
+
+@media screen and (max-width: 768px) {
+    .header {
+        top: 0;
+
+    }
+
+    .linha-horizontal {
+        display: none;
+    }
+
 
 }
