@@ -19,6 +19,7 @@ b {
 
 body,html {
     font-family: var(--fonte-principal);
+    overflow-x: hidden;
    
 }
 

@@ -13,13 +13,14 @@
 
 .container-tecnologia{
     display: grid;
-    grid-template-columns: 15% 50% 35%;
-    grid-template-rows: 40% 60%;
+    grid-template-columns: 15vw 50vw 35vw;
+    grid-template-rows: 20vh 40vh;
     grid-template-areas: 
         '. titulo imagem'
         'botoes texto imagem';
     position: relative;
     top: 20%;
+    margin-right: 8px;
 }
 
 .titulo-main{
@@ -62,8 +63,9 @@
     grid-area: texto;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-evenly;
     text-align: left;
+    font-size: 20px;
 }
 
 .textos-container .titulos__menor{
@@ -82,11 +84,31 @@
     padding: 0 10rem 4rem 0;
 }
 
-.imagem-tecnologia{
+.imagem-tecnologia-spaceport{
+    background-image: url(../technology/image-spaceport-portrait.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 90%;
+    height: 100%;
+    grid-area: imagem;
+
+}
+
+
+.imagem-tecnologia-vehicle{
+    background-image: url(../technology/image-launch-vehicle-portrait.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 90%;
+    height: 100%;
+    grid-area: imagem;
+}
+
+.imagem-tecnologia-capsule{
     background-image: url(../technology/image-space-capsule-portrait.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    width: 100%;
+    width: 90%;
     height: 100%;
     grid-area: imagem;
 }

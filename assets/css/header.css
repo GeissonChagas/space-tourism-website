@@ -4,7 +4,7 @@
     width: 100vw;
     height: 96px;
     align-items: center;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     position: relative;
     top: 5%;
 
@@ -17,7 +17,7 @@
 .menu {
     background: rgba(255, 255, 255, 0.04);
     backdrop-filter: blur(40.7742px);
-    width: 50%;
+    width: 70%;
     color: var(--branco);
     right: 0;
 
@@ -47,14 +47,15 @@
     color: var(--branco);
 }
 
-.link-linha:hover, .link-linha.ativo {
+.link-linha:hover,
+.link-linha.ativo {
     padding-bottom: 2.25rem;
     transition: 500ms;
 
 }
 
 .linha-horizontal {
-    position: relative  ;
+    position: relative;
     width: 42%;
     height: 1px;
     left: 5rem;
@@ -65,7 +66,11 @@
 
 }
 
-@media screen and (max-width: 768px) {
+.menu-responsivo {
+    display: none;
+}
+
+@media screen and (max-width: 820px) {
     .header {
         top: 0;
 
@@ -75,5 +80,90 @@
         display: none;
     }
 
+    .menu-responsivo {
+        display: none;
+    }
+
+}
+
+@media screen and (max-width: 414px) {
+
+    .header {
+        display: flex;
+        justify-content: space-between;
+        width: 100vw;
+        height: 100vh;
+        align-items: center;
+        flex-wrap: nowrap;
+        position: relative;
+        top: 0;
+
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .mobile-menu-icon div {
+        width: 32px;
+        height: 2px;
+        background-color: var(--branco);
+        margin: 8px;
+        position: relative;
+        left: 60vw;
+
+    }
+
+    .line1 .menu-open {
+        transform: rotate(-45deg) translate(-8px, 8px);
+    }
+
+    .line2 .menu-open {
+        opacity: 0;
+    }
+
+    .line3 .menu-open {
+        transform: rotate(45deg) translate(-5px, 7px);
+    }
+
+    .menu-open {
+        transform: translateX(0);
+        transition: 700ms;
+        position: absolute;
+        right: 60vw;
+        z-index: 2;
+    }
+
+    .menu-responsivo {
+        display: flex;
+        flex-direction: column;
+        background-color: rgba(255, 255, 255, 0.04);
+        backdrop-filter: blur(40.7742px);
+        width: 60vw;
+        height: 100vh;
+        position: relative;
+        align-items: center;
+        justify-content: space-around;
+        top: 25rem;
+        z-index: 1;
+        transform: translateX(100%);
+
+    }
+
+    .menu-responsivo ul {
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+        justify-content: flex-start;
+        height: 60vh;
+        font-size: 18px;
+        position: relative;
+        top: 20px;
+        text-transform: uppercase;
+    }
+
+    .menu-resp {
+        padding: 1rem 0;
+    }
 
 }
