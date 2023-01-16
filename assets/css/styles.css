@@ -59,3 +59,13 @@ a:hover:before {
     color: #000000;
 
 }
+
+@media screen and (max-width: 414px) {
+    
+
+    a {
+        position: static;
+
+    }
+    
+}

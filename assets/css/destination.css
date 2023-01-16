@@ -94,14 +94,6 @@
 
 }
 
-.distancia- {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    text-transform: uppercase;
-
-}
-
 .distancia__numero,
 .tempo__numero {
     font-size: 28px;
@@ -111,13 +103,15 @@
 
 }
 
+.responsivo{
+    display: none;
+}
+
 @media screen and (max-width:768px) {
 
     .destinos-main {
         flex-direction: column;
         align-items: center;
-        position: relative;
-        top: 2.5%;
 
     }
 
@@ -158,6 +152,48 @@
     .descricao__titulo{
         padding: 2rem 0;
         text-align: center;
+        
+    }
+
+    .responsivo{
+        display: none;
+    }
+
+    @media screen and (max-width:414px) {
+
+        .destinos-main{
+            margin-top: 15%;
+        }
+
+        .destinos-lista{
+            display: flex;
+            justify-content: space-between;
+            width: 50vw;
+
+        }
+
+        .destinos li{
+            padding: 0;
+        }
+
+        .descricao__titulo{
+            font-size: 56px;
+        }
+
+        .section-esquerda{
+            width: 90vw;
+        }     
+
+        .section-direita{
+            align-items: center;
+            justify-content: space-between;
+            width: 95%;
+            margin: 0;
+        }
+        
+        .tempo__numero, .distancia__numero{
+            font-size: 32px ;
+        }
     }
 
 

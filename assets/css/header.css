@@ -66,7 +66,7 @@
 
 }
 
-.menu-responsivo {
+.container-responsivo {
     display: none;
 }
 
@@ -88,6 +88,14 @@
 
 @media screen and (max-width: 414px) {
 
+    .menu, .logo{
+        display: none;
+    }
+
+    .container-responsivo{
+        display: flex   ;
+    }
+
     .header {
         display: flex;
         justify-content: space-between;
@@ -95,75 +103,110 @@
         height: 100vh;
         align-items: center;
         flex-wrap: nowrap;
-        position: relative;
-        top: 0;
+        position: fixed;
+
 
     }
 
-    .menu {
+    .logo-responsivo{
+        margin: 0.25rem 0 0 1rem;
+    }
+
+    .barra-nav{
         display: none;
     }
 
-    .mobile-menu-icon div {
-        width: 32px;
-        height: 2px;
-        background-color: var(--branco);
-        margin: 8px;
-        position: relative;
-        left: 60vw;
-
-    }
-
-    .line1 .menu-open {
-        transform: rotate(-45deg) translate(-8px, 8px);
-    }
-
-    .line2 .menu-open {
-        opacity: 0;
-    }
-
-    .line3 .menu-open {
-        transform: rotate(45deg) translate(-5px, 7px);
-    }
-
-    .menu-open {
-        transform: translateX(0);
-        transition: 700ms;
-        position: absolute;
-        right: 60vw;
-        z-index: 2;
-    }
-
-    .menu-responsivo {
+    .hamburger{
+        width: 2rem;
+        height: 2rem;
+        position: fixed;
+        z-index: 5;
+        right: 2rem;
+        top: 2rem;
         display: flex;
         flex-direction: column;
-        background-color: rgba(255, 255, 255, 0.04);
-        backdrop-filter: blur(40.7742px);
-        width: 60vw;
-        height: 100vh;
-        position: relative;
-        align-items: center;
-        justify-content: space-around;
-        top: 25rem;
-        z-index: 1;
-        transform: translateX(100%);
+        justify-content: space-between;
+        cursor: pointer;
+        }
+    
+        .show-menu .hamburger{
+            right: 16rem;
+    
+        }
+    
+        .line{
+            width: 100%;
+            height: .1rem;
+            padding: 1px;
+            border-radius: 10px;
+            background-color: rgb(255, 255, 255);
+            box-shadow: 0.1rem 0.1rem 3px rgba(255, 255, 255, 0.788);
+            transition: transform .7s;
+        }
+    
+        .show-menu #line1{
+            transform: rotate(45deg) translate(.4rem, .9rem);
+            background-color: #ffffff;
+            box-shadow: none;
+        }
+    
+        .show-menu #line2{
+            opacity: 0;
+            visibility: hidden;
+        }
+    
+        .show-menu #line3{
+            transform: rotate(-45deg) translate(.3rem, -.9rem);
+            background-color: #ffffff;
+            box-shadow: none;
+        }
+    
+        .sidebar{
+            width: 20rem;
+            height: 100vh;
+            background: rgba(255, 255, 255, 0.04);
+            backdrop-filter: blur(40px);
+            box-shadow: 10px 5px 15px 20px rgba(255, 255, 255, 0.8);
+            position: fixed;
+            top: 0;
+            right: -20rem;
+            transition: all .8s;
+            z-index: 3;
+        }
+    
+        .show-menu .sidebar{
+            right: 0;
+        }
+    
+        .menu-responsivo{
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+            top: 40%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    
+        .menu-item-responsivo {
+            position: relative;
+            text-align: center;
+            margin-bottom: 1rem;
+            font-size: 20px;
+            
+        }
+    
+        .link-linha-responsivo{
+            font-size: 20px;
+            color: #FFFFFF;
+            transition: color .7s;
+            text-transform: uppercase;
 
+        }
+    
+        .link-linha-responsivo:hover{
+            color: var(--azul-escuro);
+            transition: color .7s;
+        }
+    
     }
-
-    .menu-responsivo ul {
-        display: flex;
-        flex-direction: column;
-        align-items: left;
-        justify-content: flex-start;
-        height: 60vh;
-        font-size: 18px;
-        position: relative;
-        top: 20px;
-        text-transform: uppercase;
-    }
-
-    .menu-resp {
-        padding: 1rem 0;
-    }
-
-}
+    
