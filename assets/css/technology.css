@@ -213,14 +213,12 @@
         display: none;
     }
 
+}
+
 @media screen and (max-width: 414px){
 
     .textos-container .titulos__maior{
         font-size: 36px;
     }
-
+    
 }
-
-
-
-
