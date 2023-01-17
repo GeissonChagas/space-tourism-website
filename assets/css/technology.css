@@ -213,34 +213,14 @@
         display: none;
     }
 
-    @media screen and(max-width: 414px) {
+@media screen and (max-width: 414px){
 
-        .body-tecnologia{
-            background-image: url(../technology/image-space-capsule-landscape.jpg);
-            width: 100vw;
-            height: 100vh;
-            position: static;
-        }
-
-        .crew-main{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-        
-        .imagem-tecnologia-vehicle{
-            position: static;
-        }
-
-        .textos-container .titulos__maior {
-            text-transform: uppercase;
-            font-family: var(--fonte-secundaria);
-            font-size: 36px;
-        }
-
+    .textos-container .titulos__maior{
+        font-size: 36px;
     }
 
-
 }
+
+
 
 
